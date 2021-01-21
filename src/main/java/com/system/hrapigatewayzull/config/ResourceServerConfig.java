@@ -22,7 +22,12 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     //ROTAS AUTORIZADAS APENAS PARA OPERADOR
     private static final String[] OPERATOR = { "/hr-worker/**" };
 
-    private static final String[] ADMIN = { "/hr-payroll/**", "/hr-user/**" };
+    private static final String[] ADMIN = {
+            "/hr-payroll/**",
+            "/hr-user/**",
+            "/actuator/**",
+            "/hr-worker/actuator/**",
+            "hr-oauth/actuator/**"}; //para acessar o actuator tem que ser admin
 
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
