@@ -14,4 +14,14 @@ public class HrApiGatewayZullApplication {
 		SpringApplication.run(HrApiGatewayZullApplication.class, args);
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
